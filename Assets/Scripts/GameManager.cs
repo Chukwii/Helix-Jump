@@ -89,7 +89,12 @@ public class GameManager : MonoBehaviour
     {
         currentStage++;
         UIManager.displayLevel++;
-        FindObjectOfType<BallController>().ResetBall();
+        GameObject[] balls;
+        balls = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject b in balls)
+        {
+            b.GetComponent<BallController>().ResetBall();
+        }
         FindObjectOfType<HelixController>().LoadStage(currentStage);
         FindObjectOfType<coinSpawn>().spawnCoins();
 
@@ -115,7 +120,13 @@ public class GameManager : MonoBehaviour
     {
         currentStage--;
         UIManager.displayLevel--;
-        FindObjectOfType<BallController>().ResetBall();
+        GameObject[] balls;
+        balls = GameObject.FindGameObjectsWithTag("Player");
+        foreach(GameObject b in balls)
+        {
+            b.GetComponent<BallController>().ResetBall();
+        }
+        
         FindObjectOfType<HelixController>().LoadStage(currentStage);
         FindObjectOfType<coinSpawn>().spawnCoins();
 

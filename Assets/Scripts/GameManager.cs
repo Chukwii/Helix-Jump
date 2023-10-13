@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         coins = PlayerPrefs.GetInt("TotalCoins");
         currentStage =  PlayerPrefs.GetInt("lastStage");
 
-        UIManager.displayLevel += currentStage;
+        UIManager.displayLevel = currentStage + 1;
 
         if (currentStage >= 1)
         {

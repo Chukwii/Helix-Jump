@@ -5,8 +5,6 @@ using UnityEngine.Purchasing;
 
 public class IAPManager : MonoBehaviour
 {
-    public GameObject adManager;
-
     private string buy20Coin = "com.aurumworldsgames.helixjump.buy20coins";
     private string buy50Coin = "com.aurumworldsgames.helixjump.buy50coins";
     private string buy100Coin = "com.aurumworldsgames.helixjump.buy100coins";
@@ -44,7 +42,6 @@ public class IAPManager : MonoBehaviour
         {
             //remove ads
             Debug.Log("AdRemoved");
-            adManager.SetActive(false);
         }
         else
         {

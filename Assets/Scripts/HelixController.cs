@@ -19,7 +19,7 @@ public class HelixController : MonoBehaviour
     void Awake()
     {
         startRotation = transform.localEulerAngles;
-        helixDistance = topTransform.localPosition.y - (goalTransform.localPosition.y + 0.1f);
+        helixDistance = topTransform.localPosition.y - (goalTransform.localPosition.y + 0.2f);
         LoadStage(GameManager.singleton.currentStage);
     }
 
@@ -60,7 +60,7 @@ public class HelixController : MonoBehaviour
         Camera.main.backgroundColor = allStages[stageNumber].stageBackgroundColor;
         //change color of the ball
         FindObjectOfType<BallController>().GetComponent<Renderer>().material.color = allStages[stageNumber].stageBallColor;
-
+        this.GetComponent<Renderer>().material.color = allStages[stageNumber].stageHelixColor;
         //reset helix rotation
         transform.localEulerAngles = startRotation;
 

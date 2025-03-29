@@ -6,7 +6,7 @@ public class coinGet : MonoBehaviour
 {
    void OnTriggerEnter(Collider trig)
     {
-        GameManager.singleton.coins += 6;
+        GameManager.singleton.coins += 15;
         this.gameObject.SetActive(false);      
     }
 }

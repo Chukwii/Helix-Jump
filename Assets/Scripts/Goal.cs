@@ -11,7 +11,6 @@ public class Goal : MonoBehaviour
     {
         music.Stop();
         endGamePanelObj.SetActive(true);
-        FindObjectOfType<InterstitialAdExample>().ShowAd();
         Time.timeScale = 0;
     }
     

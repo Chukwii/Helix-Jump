@@ -720,7 +720,11 @@ public class ButtonManager : MonoBehaviour
         {
             music.Play();
         }
-        
+        if (PlayerPrefs.GetInt("newUser") == 0)
+        {
+            GameManager.singleton.tutorialPanel.SetActive(true);
+            PlayerPrefs.SetInt("newUser", 1);
+        }
     }
 
     public void muteMusic()
@@ -749,5 +753,12 @@ public class ButtonManager : MonoBehaviour
             sfxObj.SetActive(true);
             sfxOn = true;
         }
+    }
+
+    public void selectLevel(int level)
+    {
+        FindObjectOfType<HelixController>().LoadStage(level);
+        GameManager.singleton.currentStage = level;
+        UIManager.displayLevel = level + 1;
     }
 }

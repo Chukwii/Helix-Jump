@@ -162,6 +162,8 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.AurumWorldsGames.HelixJumpTrickorTreat
+    Standalone: com.AurumWorldsGames.Helix-Jump--Trick-or-Treat
+    iPhone: com.AurumWorldsGames.Helix-Jump--Trick-or-Treat
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -272,7 +274,7 @@ PlayerSettings:
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 1
+  androidUseCustomKeystore: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -287,7 +289,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 6432e9100ae63884fb0f264daf3662cb, type: 3}
+      m_Icon: {fileID: 2800000, guid: ed665c74cc1ef41daac327a2a38d92d2, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -927,7 +929,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Legacy Analytics: 1
-    Purchasing: 1
+    Purchasing: 0
     UNet: 1
     Unity Ads: 1
   luminIcon:

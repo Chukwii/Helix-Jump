@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageBackgroundColor: {r: 0.19496846, g: 1, b: 0.74653304, a: 1}
   stageLevelPartColor: {r: 0.4509804, g: 0.43433893, b: 0.18039218, a: 1}
+  stageHelixColor: {r: 0.6117647, g: 0.62352943, b: 0.6627451, a: 1}
   stageBallColor: {r: 0.9339623, g: 0.22093454, b: 0.18209319, a: 1}
   levels:
   - partCount: 11
